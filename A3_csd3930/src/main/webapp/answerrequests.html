@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/firstScreen.css">
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <script src="js/func.js" defer></script>
+        <script src="js/finishedStats.js"></script>
+        <script src="js/finishedReviews.js"></script>
+<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    </head>
+    
+    <body >
+        <header id="header"> <h1>Here you can see your pending requests for pet keeping and then accept or decline them. <br> </h1></header>
+        <div class="container-fluid" style="padding-bottom: 300px;" >
+<!--            <div class="center">-->
+                
+                
+            <form id="myForm">
+                <label for="username">Keeper's Username : </label><br>
+                <input type="text" id="username" name="username" title="username"  ><br><br>
+                
+                <label for="owner_id">Owner ID to message : </label><br>
+                <input type="text" id="owner_id" name="owner_id" title="owner_id"  ><br><br>
+
+                <label for="booking_id">Booking ID  : </label><br>
+                <input type="text" id="booking_id" name="booking_id" title="booking_id" ><br><br>
+                
+                <label for="messageowner">Message Owner :</label><br>
+                <textarea id="messageowner" name="messageowner" rows="13" cols="38" style=" border-radius: 15px;border-bottom :3px solid; margin-top: 0.5%;background-color: transparent;font-family :Arial, Helvetica, sans-serif;font-weight: bold;font-size : 1.2rem"></textarea><br><br>
+            </form>        
+                
+            <input type="button" id="viewrequests"  onclick="seePendingRequests(); return false;" value="View Pending Requests"><br><br>
+            <input type="button" id="accept" value="Accept Request" onclick="AcceptRequest(); return false;" ><br><br>
+            <input type="button" id="decline" value="Reject Request" onclick="DeclineRequest(); return false;" ><br><br>    
+            <input type="button" id="statistics" value="View Finished Statistics" onclick="FinishedBookingsStats(); return false;"><br><br>
+            <input type="button" id="reviews" value="View Finished Reviews" onclick="FinishedBookingsReviews(); return false;"><br><br>
+            <input type="button" id="message" value="Message Owner" onclick="MessageOwner(); return false;"><br><br>
+            
+            
+            
+            
+            
+            
+            <!--</div><br>-->
+            <div id="message" style="padding-top: 88px;text-align: left;padding-bottom: 250px; ;position: absolute;" ></div><br>
+            <div id="forEdit" style="padding-top: 93px;text-align: left;padding-bottom: 250px; ;position: absolute;" ></div><br>
+            <div style="padding-top: 100px;text-align: left;padding-bottom: 250px; ;position: absolute;" id="edit"></div><br>
+            <div id="forReviewTable" style="padding-top: 193px;text-align: left;padding-bottom: 250px; ;position: absolute;" ></div><br>
+            <div id="reviewTable" style="padding-top: 200px;text-align: left;padding-bottom: 250px; ;position: absolute;" ></div>
+        </div>
+            
+       
+        <br><br><br><br>
+        <footer style="bottom:0;text-align: center;width: 100%; background-color: black ;color: white;  font-weight: bold;  position: fixed;height: 200px;opacity:0.9;" id="foot">
+                <p >© 2023 Dimitris Gkorgkolis</p>
+                <p>Usefull links and information : </p>
+                <a href="https://www.i-pet.gr/">i-Pet</a><br>
+                <a href="https://allaboutpets.gr/katoikidia-zoa-gia-mesa-sto-spiti/">Usefull informations</a><br>
+                <a href="https://www.petcity.gr/">Pet City</a><br>
+                <a  href="https://www.xo.gr/dir-az/K/Ktiniatroi-kai-Ktiniatrikes-Klinikes/Irakleio%20Kritis/"> Veterinarians</a><br><br>
+        </footer><br>
+    </body>
+</html>

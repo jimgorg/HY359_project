@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/register_style.css">
+        <script src="js/booking.js" defer></script>
+        <script src="http://www.openlayers.org/api/OpenLayers.js" defer></script>
+        <script src="js/location.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container-fluid" style="padding-bottom: 200px;">
+            <form id="myForm">
+                <div id="booking">
+                    
+                
+                    <h2>Κράτηση για φιλοξενία </h2>
+                    
+                    <label for='keeperid'>Pet Keepers Id</label><br>
+                    <input type="number" id="keeper_id" name="keeper_id"><br><br>
+                    
+                    <label for='ownerid'>Pet Owner Id</label><br>
+                    <input type="number" id="owner_id" name="owner_id"><br><br>
+                    
+                    <label for='petid'>Pet Id</label><br>
+                    <input type="number" id="pet_id" name="pet_id"><br><br>
+                    
+                    <label for="fromDate">Αρχή φιλοξενίας:</label><br>
+                    <input type="date" id="fromDate" name="fromDate" min="2023-12-01"><br><br>
+                    
+                    <label for="toDate">Τέλος φιλοξενίας </label><br>
+                    <input type="date" id="toDate" name="toDate" min="2023-12-01"><br><br>
+                </div>
+                <div id="review">
+                    <label for="addscore">Βαθμολογία :</label><br>
+                    <label for="one">*</label>
+                    <input type="radio" id="1" name="reviewScore" value="1"><br>
+                    <label for="two">**</label>
+                    <input type="radio" id="2" name="reviewScore" value="2"><br>
+                    <label for="three">***</label>
+                    <input type="radio" id="3" name="reviewScore" value="3"><br>
+                    <label for="four">****</label>
+                    <input type="radio" id="4" name="reviewScore" value="4"><br>
+                    <label for="five">*****</label>
+                    <input type="radio" id="5" name="reviewScore" value="5"><br>
+                    <br><br>
+                    <label for="addreview">Αξιολόγηση Φιλοξενίας :</label><br>
+                    <textarea id="text" name="reviewText" rows="12" cols="50"></textarea><br><br>
+                    <input type="button" id="reviewbutton" onclick='Review(); return false;' value="AddReview"><br><br>
+                </div>
+            
+               
+                <input type="button" id="makebooking"  onclick='MakeBookingPost(); return false;' value="MakeBooking"><br><br>
+                <div id="edit"></div>
+                <div  id="fini">
+                    <input type="button" id="finishbutton"  onclick='finish(); return false;' value="Finish"><br>
+                </div><br>            
+            </form><br><br><br><br>  
+            </div>
+             <footer style="bottom:0;text-align: center;width: 100%; background-color: black ;color: white;  font-weight: bold;  position: fixed;height: 200px;opacity:0.9;" id="foot">
+                <p >© 2023 Dimitris Gkorgkolis</p>
+                <p>Usefull links and information : </p>
+                <a href="https://www.i-pet.gr/">i-Pet</a><br>
+                <a href="https://allaboutpets.gr/katoikidia-zoa-gia-mesa-sto-spiti/">Usefull informations</a><br>
+                <a href="https://www.petcity.gr/">Pet City</a><br>
+                <a  href="https://www.xo.gr/dir-az/K/Ktiniatroi-kai-Ktiniatrikes-Klinikes/Irakleio%20Kritis/"> Veterinarians</a><br><br>
+        </footer><br>
+        
+    </body>
+</html>

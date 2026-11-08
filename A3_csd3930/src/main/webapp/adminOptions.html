@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/register_style.css">
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+
+        <script src="js/func.js" defer></script>
+<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+<!--<script>
+function DelOwnerPost(){
+    let myForm = document.getElementById('myForm');
+    let formData = new FormData(myForm);
+    const data = {};
+    formData.forEach((value, key) => (data[key] = value));
+    var jsondata = JSON.stringify(data);
+    console.log("this is delownerpost");
+    var xhr = new XMLHttpRequest();
+    xhr.onload = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            document.getElementById("edit").innerHTML = "";
+            document.getElementById("edit").innerHTML += xhr.responseText;
+            
+        } else if (xhr.status !== 200) {
+            document.getElementById("edit").innerHTML += "Request failed. Returned status of " + xhr.status + "<br>";
+
+//            const responseData = JSON.parse(xhr.responseText);
+           
+            
+        }
+    };
+        
+    xhr.open('POST', 'AdminDelete');
+    xhr.setRequestHeader("Content-type", "application/json");
+    xhr.send(jsondata);
+}
+
+</script>-->
+    </head>
+    
+    <body>
+        <header id="header"> <h1>Welcome Administrator<br> </h1></header>
+        
+        <div class="container-fluid">
+             <form id="myForm">
+                    <h3>Delete user :</h3>
+                    <label for="user_id">User Id :</label><br>
+                    <input type="text" id="user_id" name="user_id" ><br><br>
+                    
+                    <label for="username">Username :</label><br>
+                    <input type="text" id="username" name="username"><br><br>
+                    
+                    <label for="email"></label>email :<br>
+                    <input type="text" id="email" name="email"><br><br>
+                </form>
+            <div class="center">
+               
+                <input type="button" id="login" value="View Users" onclick="GetUsers(); return false;"><br><br>
+                <input type="button" id="delete" value="Delete Owner" onclick="DelOwnerPost();return false;"><br><br>
+                <input type="button" id="delete" value="Delete Keeper" onclick="DelKeeperPost();return false;"><br><br>
+                <input type="button" id="stat" value="View Statistics" onclick="GetStatistics();return false;" ><br><br>
+                <!--<br><br><div style="text-align: left;padding-bottom: 200px;" id="edit"></div><br>-->
+            </div><br>
+             <div id="edit" style=" color: black;  text-align: left;padding-bottom: 300px; ;position: absolute;" ></div><br>
+        </div><br><br>
+       
+        
+        <footer style="bottom:0;text-align: center;width: 100%; background-color: black ;color: white;  font-weight: bold;  position: fixed;height: 200px;opacity:0.9;" id="foot">
+                <p >© 2023 Dimitris Gkorgkolis</p>
+                <p>Usefull links and information : </p>
+                <a href="https://www.i-pet.gr/">i-Pet</a><br>
+                <a href="https://allaboutpets.gr/katoikidia-zoa-gia-mesa-sto-spiti/">Usefull informations</a><br>
+                <a href="https://www.petcity.gr/">Pet City</a><br>
+                <a  href="https://www.xo.gr/dir-az/K/Ktiniatroi-kai-Ktiniatrikes-Klinikes/Irakleio%20Kritis/"> Veterinarians</a><br><br>
+        </footer><br>
+    </body>
+</html> 

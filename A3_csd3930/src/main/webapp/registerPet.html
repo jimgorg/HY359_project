@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>registerPet</title>
+        <link rel="stylesheet" href="css/register_style.css">
+        <script src="js/func.js" defer></script>
+        <script src="http://www.openlayers.org/api/OpenLayers.js" defer></script>
+        <script src="js/location.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/register_style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container-fluid" style="padding-bottom: 200px;">
+            <form id="myForm">
+               <div id="pet">
+                    <h2>Εγγραφή κατοικιδίου </h2>
+                    <label for="ownerusername">Όνομα Ιδιοκτήτη :</label><br>
+                    <input type="text" id="ownerusername" name="ownerusername"><br><br>
+                    
+                    <label for="name">Όνομα κατοικιδίου :</label><br>
+                    <input type="text" name="name"><br><br>
+                    
+                    <label for="breed">Ράτσα :</label><br>
+                    <input type="text" name="breed"><br><br>
+                    
+                    <label for="pettype">Είδος κατοικιδίου :</label><br>
+                    <select name="pettype" id="pettype">
+                        <option value="dog">Σκύλος</option>
+                        <option value="cat">Γάτα</option>
+                    </select>
+                    <br><br>
+                    
+                    <label for="pet_gender">Φύλο κατοικιδίου :</label>&nbsp;
+                    <label for="arseniko">Αρσενικό:</label>&nbsp;
+                    <input type="radio" id="male" name="petgender" value="male">&nbsp;
+                    <label for="thhlyko">Θηλυκό:</label>&nbsp;
+                    <input type="radio" id="female" name="petgender" value="female">
+                    <br><br>        
+                    
+                    <label for="birthyear">*Ημερομηνία γέννησης:</label><br>
+                    <input type="number" id="birthyear" name="birthyear"><br><br>
+                    
+                    <label for="weight" >Βάρος Κατοικιδίου :</label><br>
+                    <input type="number" id="weight" name="weight" max="50" step="0.1" ><br><br>
+                    
+                    <label for="petdescription">Περιγραφή Κατοικιδίου :</label><br>
+                    <textarea id="petdescription" name="description" rows="12" cols="25"></textarea><br><br>
+                    
+                    <label for="petphoto">Φωτογραφία κατοικιδίου :</label><br>
+                    <input type="url" id="photo" name = "photo"><br><br>
+                        
+                    
+                    <input type="button" id="registerpet"  onclick='RegisterPetPost(); return false;' value="RegisterPet"><br><br>
+                    <div id="edit"></div>
+                </div>
+            </form> <br><br><br><br> 
+           
+        </div>
+         <footer style="bottom:0;text-align: center;width: 100%; background-color: black ;color: white;  font-weight: bold;  position: fixed;height: 200px;opacity:0.9;" id="foot">
+                <p >© 2023 Dimitris Gkorgkolis</p>
+                <p>Usefull links and information : </p>
+                <a href="https://www.i-pet.gr/">i-Pet</a><br>
+                <a href="https://allaboutpets.gr/katoikidia-zoa-gia-mesa-sto-spiti/">Usefull informations</a><br>
+                <a href="https://www.petcity.gr/">Pet City</a><br>
+                <a  href="https://www.xo.gr/dir-az/K/Ktiniatroi-kai-Ktiniatrikes-Klinikes/Irakleio%20Kritis/"> Veterinarians</a><br><br>
+         </footer><br>
+    </body>
+</html>

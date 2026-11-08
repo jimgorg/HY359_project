@@ -1,0 +1,147 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 11, 2023, 5:33:10 PM
+    Author     : jgorg
+*/
+/*For inputsregister_style of these types*/
+input[type=text ],[type=password],[type=email],[type=date],[type=tel],[type=url],[type=number]
+{
+    border-radius: 20px;
+    width: 30%;
+    border-bottom :3px solid;
+    margin-top: 0.5%;
+    background-color: transparent;
+    color: rgb(5, 4, 4);
+    font-family :Arial, Helvetica, sans-serif;
+    font-size :100%;
+    height :1.5rem ;
+    font-weight: bold;
+    
+}
+
+
+/*For the selection iputs*/
+select{
+    border-radius: 20px;
+    width: 20.2%;
+    border-bottom :3px solid;
+    background-color: transparent;
+    font-weight: bold;
+    height: 1.5rem;
+    border-width: 2px;
+    border-color: black;        
+}
+/*For the labels*/
+label{
+    margin-bottom : 2%;
+    font-weight: bold;
+}
+/*Backround image*/
+body{
+    background-image: url(women-3118387_1280.jpg);
+    background-repeat: no-repeat;
+    font-size: 18px;
+    /* width: 100%;
+    height: 100%; */
+    background-size :cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    
+}
+
+
+/*For the subbmit button*/
+#Submit_Button
+{
+    width: 10%;
+    border-radius: 20px;
+    height: 3rem;
+    margin-left: 4.5%;
+    background-color :  #235484;
+    font-weight: bold;   
+    font-size: 18px;
+}
+
+/*.center {
+  margin: 0;
+  position:absolute;
+  top: 45%;
+  left:42%;
+  padding-bottom: 100px;
+  text-align:center;
+  
+  width: 500px;
+  height: 500px;
+  border: 5px solid #2196F3;
+  background-color: #f7f7f7;
+
+  
+}*/
+
+/*#simpleUser
+{
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}*/
+
+/*#changeowner
+{
+    width: 10%;
+    border-radius: 20px;
+    height: 3rem;
+    margin-left: 4.5%;
+    background-color :  #235484;
+    font-weight: bold;   
+    font-size: 18px;
+}*/
+
+
+/*#registerpet
+{
+    width: 10%;
+    border-radius: 20px;
+    height: 3rem;
+    margin-left: 4.5%;
+    background-color :  #235484;
+    font-weight: bold;   
+    font-size: 18px;    
+}*/
+
+input[type=button]{
+     width: 10%;
+    border-radius: 20px;
+    height: 3rem;
+    margin-left: 4.5%;
+    background-color :  #235484;
+    font-weight: bold;   
+    font-size: 18px;    
+}
+
+/*#makebooking{
+     width: 10%;
+    border-radius: 20px;
+    height: 3rem;
+    margin-left: 4.5%;
+    background-color :  #235484;
+    font-weight: bold;   
+    font-size: 18px;    
+
+}*/
+
+#fordogdiv{
+    margin-left: 30px;
+}
+#map_flex{
+    display: flex;
+
+}
+
+
